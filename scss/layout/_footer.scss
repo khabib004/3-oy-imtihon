@@ -4,6 +4,7 @@ footer {
   margin: 0 auto;
   height: 126px;
   background-size: cover;
+  background: var(--main-bg-page, #FBF8EC);
 
   @media (max-width: 707px) {
     height: 200px;

@@ -23,6 +23,11 @@ button {
   cursor: pointer;
 }
 
+section {
+  padding-top: 80px;
+  background: var(--main-bg-page, #FBF8EC);
+}
+
 .container {
   max-width: 1248px;
   margin: 0 auto;
@@ -42,6 +47,7 @@ footer {
   margin: 0 auto;
   height: 126px;
   background-size: cover;
+  background: var(--main-bg-page, #FBF8EC);
 }
 @media (max-width: 707px) {
   footer {
@@ -433,11 +439,7 @@ header {
   }
 }
 
-section {
-  padding-top: 80px;
-  background: var(--main-bg-page, #FBF8EC);
-}
-section .playgirount {
+.playgirount {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -446,18 +448,18 @@ section .playgirount {
   margin-bottom: 120px;
 }
 @media (max-width: 480px) {
-  section .playgirount {
+  .playgirount {
     margin-bottom: 70px;
   }
 }
-section .playgirount-name {
+.playgirount-name {
   display: flex;
   align-items: flex-end;
   gap: 40px;
   align-self: stretch;
   justify-content: space-between;
 }
-section .playgirount-name h1 {
+.playgirount-name h1 {
   flex: 1 0 0;
   color: var(--main-on-surface, #414141);
   font-family: "Rubik";
@@ -468,11 +470,11 @@ section .playgirount-name h1 {
   transition: 1s;
 }
 @media (max-width: 640px) {
-  section .playgirount-name h1 {
+  .playgirount-name h1 {
     font-size: 25px;
   }
 }
-section .playgirount-name .name-button-link {
+.playgirount-name .name-button-link {
   display: flex;
   width: 168px;
   padding: 8px;
@@ -482,7 +484,7 @@ section .playgirount-name .name-button-link {
   border-radius: 4px;
   border: 0px solid var(--grayscale-hard, #8F8F8F);
 }
-section .playgirount-name .name-button-link a {
+.playgirount-name .name-button-link a {
   color: var(--grayscale-hardest, #606060);
   text-align: center;
   font-family: "Rubik";
@@ -492,11 +494,11 @@ section .playgirount-name .name-button-link a {
   line-height: 150%;
 }
 @media (max-width: 640px) {
-  section .playgirount-name .name-button-link a {
+  .playgirount-name .name-button-link a {
     font-size: 12px;
   }
 }
-section .playgirount .item-playgirount {
+.playgirount .item-playgirount {
   display: flex;
   align-items: flex-start;
   gap: 40px;
@@ -506,16 +508,16 @@ section .playgirount .item-playgirount {
   transition: 1s;
 }
 @media (max-width: 953px) {
-  section .playgirount .item-playgirount {
+  .playgirount .item-playgirount {
     gap: 20px;
   }
 }
 @media (max-width: 480px) {
-  section .playgirount .item-playgirount {
+  .playgirount .item-playgirount {
     gap: 16px;
   }
 }
-section .playgirount .item-playgirount .item-card {
+.playgirount .item-playgirount .item-card {
   width: 272px;
   height: 365px;
   border-radius: 4px;
@@ -524,39 +526,39 @@ section .playgirount .item-playgirount .item-card {
   transition: 1s;
 }
 @media (max-width: 953px) {
-  section .playgirount .item-playgirount .item-card {
+  .playgirount .item-playgirount .item-card {
     width: 200px;
     height: 315px;
   }
 }
 @media (max-width: 480px) {
-  section .playgirount .item-playgirount .item-card {
+  .playgirount .item-playgirount .item-card {
     width: 150px;
     height: 285px;
   }
 }
-section .playgirount .item-playgirount .item-card:hover .item-card-img svg {
+.playgirount .item-playgirount .item-card:hover .item-card-img svg {
   display: block;
   right: 12px;
   transition: 1s;
 }
-section .playgirount .item-playgirount .item-card .item-card-img {
+.playgirount .item-playgirount .item-card .item-card-img {
   position: absolute;
 }
-section .playgirount .item-playgirount .item-card .item-card-img img {
+.playgirount .item-playgirount .item-card .item-card-img img {
   width: 272px;
 }
 @media (max-width: 953px) {
-  section .playgirount .item-playgirount .item-card .item-card-img img {
+  .playgirount .item-playgirount .item-card .item-card-img img {
     width: 200px;
   }
 }
 @media (max-width: 480px) {
-  section .playgirount .item-playgirount .item-card .item-card-img img {
+  .playgirount .item-playgirount .item-card .item-card-img img {
     width: 150px;
   }
 }
-section .playgirount .item-playgirount .item-card .item-card-img a {
+.playgirount .item-playgirount .item-card .item-card-img a {
   position: absolute;
   left: 10px;
   top: 118px;
@@ -572,26 +574,26 @@ section .playgirount .item-playgirount .item-card .item-card-img a {
   padding: 8px;
 }
 @media (max-width: 953px) {
-  section .playgirount .item-playgirount .item-card .item-card-img a {
+  .playgirount .item-playgirount .item-card .item-card-img a {
     top: 80px;
     font-size: 14px;
   }
 }
 @media (max-width: 480px) {
-  section .playgirount .item-playgirount .item-card .item-card-img a {
+  .playgirount .item-playgirount .item-card .item-card-img a {
     top: 70px;
     font-size: 13px;
     padding: 5px;
   }
 }
-section .playgirount .item-playgirount .item-card .item-card-img svg {
+.playgirount .item-playgirount .item-card .item-card-img svg {
   display: none;
   position: absolute;
   right: -20px;
   top: 12px;
   transition: 1s;
 }
-section .playgirount .item-playgirount .item-card .item-card-text {
+.playgirount .item-playgirount .item-card .item-card-text {
   display: flex;
   padding: 8px;
   flex-direction: column;
@@ -601,18 +603,18 @@ section .playgirount .item-playgirount .item-card .item-card-text {
   padding-top: 170px;
 }
 @media (max-width: 953px) {
-  section .playgirount .item-playgirount .item-card .item-card-text {
+  .playgirount .item-playgirount .item-card .item-card-text {
     padding-top: 120px;
   }
 }
-section .playgirount .item-playgirount .item-card .item-card-text .card-text-sum {
+.playgirount .item-playgirount .item-card .item-card-text .card-text-sum {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   align-self: stretch;
 }
-section .playgirount .item-playgirount .item-card .item-card-text .card-text-sum h1 {
+.playgirount .item-playgirount .item-card .item-card-text .card-text-sum h1 {
   color: var(--main-on-surface, #414141);
   font-family: "Rubik";
   font-size: 18px;
@@ -621,11 +623,11 @@ section .playgirount .item-playgirount .item-card .item-card-text .card-text-sum
   line-height: 150%;
 }
 @media (max-width: 480px) {
-  section .playgirount .item-playgirount .item-card .item-card-text .card-text-sum h1 {
+  .playgirount .item-playgirount .item-card .item-card-text .card-text-sum h1 {
     font-size: 14px;
   }
 }
-section .playgirount .item-playgirount .item-card .item-card-text .card-text-sum h2 {
+.playgirount .item-playgirount .item-card .item-card-text .card-text-sum h2 {
   color: var(--grayscale-hardest, #606060);
   font-family: "Rubik";
   font-size: 16px;
@@ -634,15 +636,15 @@ section .playgirount .item-playgirount .item-card .item-card-text .card-text-sum
   line-height: 150%;
 }
 @media (max-width: 480px) {
-  section .playgirount .item-playgirount .item-card .item-card-text .card-text-sum h2 {
+  .playgirount .item-playgirount .item-card .item-card-text .card-text-sum h2 {
     font-size: 14px;
   }
 }
-section .playgirount .item-playgirount .item-card .item-card-text .card-text-narx {
+.playgirount .item-playgirount .item-card .item-card-text .card-text-narx {
   position: relative;
   padding-top: 8px;
 }
-section .playgirount .item-playgirount .item-card .item-card-text .card-text-narx h3 {
+.playgirount .item-playgirount .item-card .item-card-text .card-text-narx h3 {
   color: var(--main-on-surface, #414141);
   font-family: "Rubik";
   font-size: 16px;
@@ -652,16 +654,16 @@ section .playgirount .item-playgirount .item-card .item-card-text .card-text-nar
   padding-bottom: 8px;
 }
 @media (max-width: 953px) {
-  section .playgirount .item-playgirount .item-card .item-card-text .card-text-narx h3 {
+  .playgirount .item-playgirount .item-card .item-card-text .card-text-narx h3 {
     font-size: 14px;
   }
 }
 @media (max-width: 480px) {
-  section .playgirount .item-playgirount .item-card .item-card-text .card-text-narx h3 {
+  .playgirount .item-playgirount .item-card .item-card-text .card-text-narx h3 {
     font-size: 12px;
   }
 }
-section .playgirount .item-playgirount .item-card .item-card-text .card-text-narx button {
+.playgirount .item-playgirount .item-card .item-card-text .card-text-narx button {
   position: absolute;
   top: 100px;
   width: 100%;
@@ -677,11 +679,11 @@ section .playgirount .item-playgirount .item-card .item-card-text .card-text-nar
   transition: 1s;
 }
 @media (max-width: 480px) {
-  section .playgirount .item-playgirount .item-card .item-card-text .card-text-narx button {
+  .playgirount .item-playgirount .item-card .item-card-text .card-text-narx button {
     top: 80px;
   }
 }
-section .playgirount .item-playgirount .item-card .item-card-text .card-text-narx button a {
+.playgirount .item-playgirount .item-card .item-card-text .card-text-narx button a {
   color: var(--main-secondary, #70C05B);
   text-align: center;
   font-family: "Rubik";
@@ -690,7 +692,7 @@ section .playgirount .item-playgirount .item-card .item-card-text .card-text-nar
   font-weight: 400;
   line-height: 150%;
 }
-section .playgirount .item-playgirount .item-card .item-card-text .card-text-narx button:hover {
+.playgirount .item-playgirount .item-card .item-card-text .card-text-narx button:hover {
   background: var(--main-primary, #F63);
 }
 
