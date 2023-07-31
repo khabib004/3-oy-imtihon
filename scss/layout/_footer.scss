@@ -1,0 +1,180 @@
+footer {
+  background-image: url(/image/bg.png);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  height: 126px;
+  background-size: cover;
+
+  @media (max-width: 707px) {
+    height: 200px;
+  }
+
+
+  .footer-page {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+    padding-top: 30px;
+
+    @media (max-width: 824px) {
+      gap: 1px;
+    }
+
+    @media (max-width: 710px) {
+      padding-bottom: 80px;
+    }
+
+    .footer-frame {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      @media (max-width: 707px) {
+        display: grid;
+      }
+
+      .footer-logo {
+        a {
+          img {
+            width: 64px;
+            height: 44px;
+          }
+        }
+      }
+
+      .footer-text {
+        display: flex;
+        align-items: flex-start;
+        column-gap: 30px;
+        row-gap: 10px;
+        flex-wrap: wrap;
+
+        @media (max-width: 824px) {
+          max-width: 300px;
+          column-gap: 20px;
+        }
+
+        a {
+          color: var(--main-on-surface, #414141);
+          font-family: "Rubik";
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+        }
+      }
+    }
+
+    .footer-kantak {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 30px;
+
+      @media (max-width: 707px) {
+        position: absolute;
+        top: 20px;
+        right: 12px;
+        display: grid;
+        gap: 15px;
+      }
+
+      .kantak-logo {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .kantak-tel {
+        a {
+          width: 152px;
+          color: var(--main-on-surface, #414141);
+          font-family: "Rubik";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          display: block;
+
+          @media (max-width: 824px) {
+            font-size: 14px;
+          }
+        }
+
+        h1 {
+          color: var(--main-on-surface, #414141);
+          font-family: "Rubik";
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          padding-top: 15px;
+
+          @media (max-width: 824px) {
+            font-size: 10px;
+          }
+
+          @media (max-width: 707px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+.footer-layout {
+  width: 100%;
+  position: fixed;
+  display: none;
+  bottom: 0;
+  align-items: center;
+  transition: 0.4s;
+  z-index: 100;
+  background: var(--surface, #FFF);
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.10);
+
+  @media (max-width: 710px) {
+    display: block;
+  }
+
+  .instanke {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    padding: 0px 16px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+
+    .katalog {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+
+        h1 {
+          color: var(--main-on-surface, #414141);
+          text-align: center;
+          font-family: "Rubik";
+          font-size: 8px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+}
