@@ -1,0 +1,197 @@
+@use "../global";
+
+.knatakti {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+
+  .onas-nik {
+    padding-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+
+    a {
+      color: var(--main-on-surface, #414141);
+      font-family: "Rubik";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+
+  .kantak-url {
+    padding-top: 30px;
+
+    .url-nik {
+      h1 {
+        color: var(--main-on-surface, #414141);
+        font-family: "Rubik";
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        transition: 1s;
+
+        @media (max-width: 595px) {
+          font-size: 40px;
+        }
+      }
+    }
+
+    .url-manzil {
+      display: flex;
+      padding-top: 40px;
+      align-items: flex-start;
+      gap: 80px;
+      transition: 1s;
+      padding-bottom: 80px;
+
+
+      @media (max-width: 795px) {
+        gap: 20px;
+      }
+
+      @media (max-width: 595px) {
+        display: grid;
+      }
+
+
+      .url-uy {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        flex-shrink: 0;
+        transition: 1s;
+
+        .url-number {
+          gap: 15px;
+
+          @media (max-width: 795px) {
+            max-width: 250px;
+          }
+
+          h3 {
+            color: var(--main-on-surface, #414141);
+            font-family: "Rubik";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+          }
+
+          a {
+            color: var(--main-on-surface, #414141);
+            font-family: "Rubik";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+            text-decoration-line: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nashi-magazin {
+  padding-bottom: 50px;
+  .nashi-name {
+    h1 {
+      color: var(--main-on-surface, #414141);
+      font-family: "Rubik";
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+
+      @media (max-width: 680px) {
+        font-size: 30px;
+      }
+    }
+
+    .nashe-button {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      padding-top: 44px;
+      flex-wrap: wrap;
+
+      button {
+        border-radius: 4px;
+        background: var(--grayscale-lightest, #F3F2F1);
+        border: none;
+        display: flex;
+        width: 86px;
+        height: 32px;
+        padding: 8px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        transition: 1s;
+
+
+        &:hover {
+          border-radius: 4px;
+          background: var(--main-secondary, #70C05B);
+
+          a {
+            color: #FFF;
+          }
+        }
+
+        a {
+          color: var(--grayscale-hardest, #606060);
+          text-align: center;
+          font-family: "Rubik";
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          padding: 10px 15px;
+        }
+      }
+    }
+
+    @media (max-width: 680px) {
+      padding-top: 100px;
+    }
+  }
+
+  .frame-manzil {
+    display: flex;
+    align-items: flex-start;
+    gap: 64px;
+    padding-top: 32px;
+    flex-wrap: wrap;
+
+    .vashod {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+
+      &-title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        a {
+          color: var(--main-on-surface, #414141);
+          font-family: "Rubik";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+
+  .nashi-karta {
+    margin-top: 30px;
+  }
+}
