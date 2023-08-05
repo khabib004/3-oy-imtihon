@@ -26,3 +26,19 @@ section {
   padding-top: 80px;
   background: var(--main-bg-page, #FBF8EC);
 }
+
+.container-nik {
+  padding-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+
+  a {
+    color: var(--main-on-surface, #414141);
+    font-family: "Rubik";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
