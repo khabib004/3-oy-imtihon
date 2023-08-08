@@ -62,18 +62,27 @@
   }
 }
 
+.products-row {
+  display: flex;
+  gap: 40px;
+}
 
 
 .playgirount {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
-  align-self: stretch;
-  margin-bottom: 120px;
+  gap: 50px;
+
 
   @media (max-width: 480px) {
     margin-bottom: 70px;
+  }
+
+  .search-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
   }
 
   &-name {

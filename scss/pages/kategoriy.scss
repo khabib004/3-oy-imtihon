@@ -1,8 +1,10 @@
 @use "../global";
 
-.kategorii {
-  padding-top: 50px;
-  gap: 60px;
+.playgirount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 
   &-name {
     h1 {
@@ -14,5 +16,5 @@
       line-height: 150%;
     }
   }
-  
+
 }

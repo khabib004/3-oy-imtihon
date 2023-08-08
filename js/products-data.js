@@ -8,10 +8,7 @@ const products = [
     rating: 5,
     discount: 0,
     images: [
-      "../assets/images/products/1.png",
-      "../assets/images/products/2.png",
-      "../assets/images/products/3.png",
-      "../assets/images/products/4.png",
+      "../image/image.png",
     ],
   },
   {
@@ -480,7 +477,7 @@ const products = [
   },
   {
     id: 31,
-    name: "Grilled Cheese",
+    name: "44,50",
     category: "Lunch",
     description:
       "A grilled cheese sandwich is a hot sandwich made from cheese and bread.",
@@ -488,15 +485,15 @@ const products = [
     rating: 5,
     discount: 50,
     images: [
-      "../assets/images/products/31.png",
-      "../assets/images/products/32.png",
-      "../assets/images/products/33.png",
-      "../assets/images/products/34.png",
+      "../image/image.png",
+      "../image/image.png",
+      // "../image/image.png",
+      // "../image/image.png",
     ],
   },
   {
     id: 32,
-    name: "Steak",
+    name: "44,50",
     category: "Dinner",
     description:
       "Steak is a popular dinner dish made from a cut of beef that is usually grilled or pan-fried.",

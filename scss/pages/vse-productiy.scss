@@ -1,0 +1,17 @@
+@use "../global";
+
+.playgirount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  .search-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .products-card {
+    display: flex;
+  }
+}
