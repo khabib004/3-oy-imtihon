@@ -583,7 +583,7 @@ header {
     gap: 16px;
   }
 }
-.playgirount .item-playgirount .item-card {
+.playgirount .item-playgirount .product-card {
   width: 272px;
   height: 365px;
   border-radius: 4px;
@@ -592,39 +592,39 @@ header {
   transition: 1s;
 }
 @media (max-width: 953px) {
-  .playgirount .item-playgirount .item-card {
+  .playgirount .item-playgirount .product-card {
     width: 200px;
     height: 315px;
   }
 }
 @media (max-width: 480px) {
-  .playgirount .item-playgirount .item-card {
+  .playgirount .item-playgirount .product-card {
     width: 150px;
     height: 285px;
   }
 }
-.playgirount .item-playgirount .item-card:hover .item-card-img svg {
+.playgirount .item-playgirount .product-card:hover .item-card-img svg {
   display: block;
   right: 12px;
   transition: 1s;
 }
-.playgirount .item-playgirount .item-card .item-card-img {
+.playgirount .item-playgirount .product-card .item-card-img {
   position: absolute;
 }
-.playgirount .item-playgirount .item-card .item-card-img img {
+.playgirount .item-playgirount .product-card .item-card-img img {
   width: 272px;
 }
 @media (max-width: 953px) {
-  .playgirount .item-playgirount .item-card .item-card-img img {
+  .playgirount .item-playgirount .product-card .item-card-img img {
     width: 200px;
   }
 }
 @media (max-width: 480px) {
-  .playgirount .item-playgirount .item-card .item-card-img img {
+  .playgirount .item-playgirount .product-card .item-card-img img {
     width: 150px;
   }
 }
-.playgirount .item-playgirount .item-card .item-card-img a {
+.playgirount .item-playgirount .product-card .item-card-img a {
   position: absolute;
   left: 10px;
   top: 118px;
@@ -640,26 +640,26 @@ header {
   padding: 8px;
 }
 @media (max-width: 953px) {
-  .playgirount .item-playgirount .item-card .item-card-img a {
+  .playgirount .item-playgirount .product-card .item-card-img a {
     top: 80px;
     font-size: 14px;
   }
 }
 @media (max-width: 480px) {
-  .playgirount .item-playgirount .item-card .item-card-img a {
+  .playgirount .item-playgirount .product-card .item-card-img a {
     top: 70px;
     font-size: 13px;
     padding: 5px;
   }
 }
-.playgirount .item-playgirount .item-card .item-card-img svg {
+.playgirount .item-playgirount .product-card .item-card-img svg {
   display: none;
   position: absolute;
   right: -20px;
   top: 12px;
   transition: 1s;
 }
-.playgirount .item-playgirount .item-card .item-card-text {
+.playgirount .item-playgirount .product-card .item-card-text {
   display: flex;
   padding: 8px;
   flex-direction: column;
@@ -669,18 +669,18 @@ header {
   padding-top: 170px;
 }
 @media (max-width: 953px) {
-  .playgirount .item-playgirount .item-card .item-card-text {
+  .playgirount .item-playgirount .product-card .item-card-text {
     padding-top: 120px;
   }
 }
-.playgirount .item-playgirount .item-card .item-card-text .card-text-sum {
+.playgirount .item-playgirount .product-card .item-card-text .card-text-sum {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   align-self: stretch;
 }
-.playgirount .item-playgirount .item-card .item-card-text .card-text-sum h1 {
+.playgirount .item-playgirount .product-card .item-card-text .card-text-sum h1 {
   color: var(--main-on-surface, #414141);
   font-family: "Rubik";
   font-size: 18px;
@@ -689,11 +689,11 @@ header {
   line-height: 150%;
 }
 @media (max-width: 480px) {
-  .playgirount .item-playgirount .item-card .item-card-text .card-text-sum h1 {
+  .playgirount .item-playgirount .product-card .item-card-text .card-text-sum h1 {
     font-size: 14px;
   }
 }
-.playgirount .item-playgirount .item-card .item-card-text .card-text-sum h2 {
+.playgirount .item-playgirount .product-card .item-card-text .card-text-sum h2 {
   color: var(--grayscale-hardest, #606060);
   font-family: "Rubik";
   font-size: 16px;
@@ -702,15 +702,15 @@ header {
   line-height: 150%;
 }
 @media (max-width: 480px) {
-  .playgirount .item-playgirount .item-card .item-card-text .card-text-sum h2 {
+  .playgirount .item-playgirount .product-card .item-card-text .card-text-sum h2 {
     font-size: 14px;
   }
 }
-.playgirount .item-playgirount .item-card .item-card-text .card-text-narx {
+.playgirount .item-playgirount .product-card .item-card-text .card-text-narx {
   position: relative;
   padding-top: 8px;
 }
-.playgirount .item-playgirount .item-card .item-card-text .card-text-narx h3 {
+.playgirount .item-playgirount .product-card .item-card-text .card-text-narx h3 {
   color: var(--main-on-surface, #414141);
   font-family: "Rubik";
   font-size: 16px;
@@ -720,16 +720,16 @@ header {
   padding-bottom: 8px;
 }
 @media (max-width: 953px) {
-  .playgirount .item-playgirount .item-card .item-card-text .card-text-narx h3 {
+  .playgirount .item-playgirount .product-card .item-card-text .card-text-narx h3 {
     font-size: 14px;
   }
 }
 @media (max-width: 480px) {
-  .playgirount .item-playgirount .item-card .item-card-text .card-text-narx h3 {
+  .playgirount .item-playgirount .product-card .item-card-text .card-text-narx h3 {
     font-size: 12px;
   }
 }
-.playgirount .item-playgirount .item-card .item-card-text .card-text-narx button {
+.playgirount .item-playgirount .product-card .item-card-text .card-text-narx button {
   position: absolute;
   top: 100px;
   width: 100%;
@@ -745,11 +745,11 @@ header {
   transition: 1s;
 }
 @media (max-width: 480px) {
-  .playgirount .item-playgirount .item-card .item-card-text .card-text-narx button {
+  .playgirount .item-playgirount .product-card .item-card-text .card-text-narx button {
     top: 80px;
   }
 }
-.playgirount .item-playgirount .item-card .item-card-text .card-text-narx button a {
+.playgirount .item-playgirount .product-card .item-card-text .card-text-narx button a {
   color: var(--main-secondary, #70C05B);
   text-align: center;
   font-family: "Rubik";
@@ -758,7 +758,7 @@ header {
   font-weight: 400;
   line-height: 150%;
 }
-.playgirount .item-playgirount .item-card .item-card-text .card-text-narx button:hover {
+.playgirount .item-playgirount .product-card .item-card-text .card-text-narx button:hover {
   background: var(--main-primary, #F63);
 }
 
