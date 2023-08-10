@@ -34,17 +34,3 @@ searchInput.addEventListener( 'keyup', function () {
   getProducts();
 } );
 
-
-
-
-// let search = '';
-
-// function getProducts() {
-//   newProductsRow.innerHTML = "";
-//   newProducts.map( ( pr ) => {
-//     newProductsRow.innerHTML += getProductCard( pr );
-//   } );
-// }
-
-// getProducts();
-
