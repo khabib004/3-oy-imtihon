@@ -480,7 +480,7 @@ const products = [
     name: "44,50",
     category: "Lunch",
     description:
-      "A grilled cheese sandwich is a hot sandwich made from cheese and bread.",
+      "Г/Ц Блинчики с мясом вес, Россия",
     price: 100,
     rating: 5,
     discount: 50,

@@ -352,6 +352,7 @@ header {
   align-items: center;
 }
 .header-block .header-frame .frame-yurak a {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -365,6 +366,17 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+.header-block .header-frame .frame-yurak a p {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 13px;
+  border-radius: 4px;
+  background: var(--main-primary, #F63);
+  color: white;
+  padding: 0px 4px;
+  border-radius: 10px;
 }
 .header-block .header-frame .frame-img {
   display: flex;

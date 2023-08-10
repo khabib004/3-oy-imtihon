@@ -352,6 +352,7 @@ header {
   align-items: center;
 }
 .header-block .header-frame .frame-yurak a {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -365,6 +366,17 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+.header-block .header-frame .frame-yurak a p {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 13px;
+  border-radius: 4px;
+  background: var(--main-primary, #F63);
+  color: white;
+  padding: 0px 4px;
+  border-radius: 10px;
 }
 .header-block .header-frame .frame-img {
   display: flex;
@@ -429,4 +441,252 @@ header {
   transition: 1s;
   z-index: 100;
   top: 0;
+}
+
+.products-row {
+  display: flex;
+  gap: 30px;
+}
+
+.kategoriya-name {
+  padding-top: 27px;
+}
+.kategoriya-name h1 {
+  color: var(--main-on-surface, #414141);
+  font-family: "Rubik";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.kategoriya-frame {
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
+  padding-top: 60px;
+}
+.kategoriya-frame .kategoriya-filtr {
+  display: flex;
+  width: 272px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.kategoriya-frame .kategoriya-filtr .filtr-name {
+  border-radius: 4px;
+  background: var(--grayscale-lightest, #F3F2F1);
+  width: 100%;
+}
+.kategoriya-frame .kategoriya-filtr .filtr-name h1 {
+  color: var(--main-on-surface, #414141);
+  font-family: "Rubik";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  padding: 10px;
+}
+.kategoriya-frame .kategoriya-filtr .filtr-frame {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+}
+.kategoriya-frame .kategoriya-filtr .filtr-frame .frame-nik {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.kategoriya-frame .kategoriya-filtr .filtr-frame .frame-nik h1 {
+  color: #000;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.kategoriya-frame .kategoriya-filtr .filtr-frame .frame-nik h2 {
+  color: var(--grayscale-hardest, #606060);
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.kategoriya-frame .kategoriya-filtr .filtr-frame .frame-input {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.kategoriya-frame .kategoriya-filtr .filtr-frame .frame-input form {
+  width: 124px;
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid var(--grayscale-light, #BFBFBF);
+  background: var(--main-surface, #FFF);
+}
+.kategoriya-frame .kategoriya-filtr .filtr-frame .frame-input form input {
+  padding: 8px 16px;
+  max-width: 92px;
+  border: none;
+}
+.kategoriya-frame .kategoriya-filtr .filtr-frame input {
+  width: 80%;
+  margin: 0 auto;
+}
+.kategoriya-frame .product-card {
+  width: 272px;
+  height: 365px;
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+  position: relative;
+  margin-bottom: 40px;
+}
+@media (max-width: 1225px) {
+  .kategoriya-frame .product-card {
+    width: 200px;
+    height: 315px;
+  }
+}
+@media (max-width: 480px) {
+  .kategoriya-frame .product-card {
+    width: 150px;
+    height: 285px;
+  }
+}
+.kategoriya-frame .product-card:hover .item-card-img svg {
+  display: block;
+  right: 12px;
+  transition: 1s;
+}
+.kategoriya-frame .product-card .product-card-body {
+  position: absolute;
+}
+.kategoriya-frame .product-card .product-card-body img {
+  width: 272px;
+  transition: 1s;
+}
+@media (max-width: 1225px) {
+  .kategoriya-frame .product-card .product-card-body img {
+    width: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .kategoriya-frame .product-card .product-card-body img {
+    width: 150px;
+  }
+}
+.kategoriya-frame .product-card .product-card-body a {
+  position: absolute;
+  left: 10px;
+  top: 118px;
+  border-radius: 4px;
+  background: var(--main-primary, #F63);
+  color: var(--main-on-primary, #FFF);
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 8px;
+}
+@media (max-width: 953px) {
+  .kategoriya-frame .product-card .product-card-body a {
+    top: 80px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .kategoriya-frame .product-card .product-card-body a {
+    top: 70px;
+    font-size: 13px;
+    padding: 5px;
+  }
+}
+.kategoriya-frame .product-card .product-card-body svg {
+  display: none;
+  position: absolute;
+  right: -20px;
+  top: 12px;
+  transition: 1s;
+}
+.kategoriya-frame .product-card .product-card-footer {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  gap: 8px;
+  align-self: stretch;
+  padding-top: 170px;
+}
+@media (max-width: 953px) {
+  .kategoriya-frame .product-card .product-card-footer {
+    padding-top: 120px;
+  }
+}
+.kategoriya-frame .product-card .product-card-footer h3 a {
+  color: var(--main-on-surface, #414141);
+  font-family: "Rubik";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+@media (max-width: 480px) {
+  .kategoriya-frame .product-card .product-card-footer h3 a {
+    font-size: 14px;
+  }
+}
+.kategoriya-frame .product-card .product-card-footer p a {
+  color: var(--grayscale-hardest, #606060);
+  font-family: "Rubik";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+@media (max-width: 480px) {
+  .kategoriya-frame .product-card .product-card-footer p a {
+    font-size: 14px;
+  }
+}
+.kategoriya-frame .product-card .product-card-footer button {
+  display: flex;
+  padding: 8px;
+  width: 93%;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 4px;
+  border: 1px solid var(--main-secondary, #70C05B);
+  transition: 0.5s;
+  position: absolute;
+  bottom: 10px;
+}
+@media (max-width: 480px) {
+  .kategoriya-frame .product-card .product-card-footer button {
+    top: 80px;
+  }
+}
+.kategoriya-frame .product-card .product-card-footer button b {
+  color: var(--main-secondary, #70C05B);
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  transition: 0.5s;
+}
+.kategoriya-frame .product-card .product-card-footer button:hover {
+  background: var(--main-primary, #F63);
+}
+.kategoriya-frame .product-card .product-card-footer button:hover b {
+  color: white;
 }
