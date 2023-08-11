@@ -4,23 +4,26 @@ const searchInput = document.querySelector( ".search-input" );
 let search = "";
 
 
-function getProductCard(pr) {
+function getProductCard({id, images, name, description, price}) {
   return `
   <div class="product-card">
     <div class="product-card-body">
-      <img src="${pr.images[ 0 ]}" alt="${pr.name}">
+      <img 
+        src="${images[ 0 ]}" 
+        alt="${name}">
     </div>
     <div class="product-card-footer">
-      <h3><a href="product.html">${pr.name}</a></h3>
-      <p><a href="/statiy.html">${pr.description}</a></p>
-      <button><b> В корзину </b></button>
+      <h3><a href="product.html">${name}</a></h3>
+      <p><a href="/statiy.html">${description}</a></p>
+      <button onClick="addToCart(${id})"><b> В корзину </b></button>
     </div>
   </div>
-  `
+  `;
 }
 
 function getProducts() {
-  let results = products.filter( pr => pr.name.includes( search ) );
+  let results = products.filter( pr => pr.name.toLowerCase().includes( search ) );
+  productsRow.innerHTML = "";
   results.map((pr) => {
     productsRow.innerHTML += getProductCard(pr);
   });
@@ -30,7 +33,14 @@ getProducts();
 
 
 searchInput.addEventListener( 'keyup', function () {
-  search = this.name;
+  search = this.name.trim().toLowerCase();
   getProducts();
 } );
 
+
+function addToCart(id) {
+  let product = products.find((pr) => pr.id === id);
+  cart.push(product);
+  getCartTotal();
+  console.log(cart);
+}

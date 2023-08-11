@@ -141,7 +141,7 @@
     .product-card-body {
       position: absolute;
 
-      img {
+      .productImg {
         width: 272px;
         transition: 1s;
 
@@ -154,32 +154,23 @@
         }
       }
 
-      a {
+      .prodImg {
         position: absolute;
-        left: 10px;
-        top: 118px;
+        top: 5px;
+        right: 5px;
         border-radius: 4px;
-        background: var(--main-primary, #F63);
-        color: var(--main-on-primary, #FFF);
-        text-align: center;
-        font-family: "Rubik";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-        padding: 8px;
+        opacity: 0.5;
+        background: var(--grayscale-lightest, #F3F2F1);
 
-        @media (max-width: 953px) {
-          top: 80px;
-          font-size: 14px;
+        a {
+          img {
+            padding: 4px;
+          }
+
         }
 
-        @media (max-width: 480px) {
-          top: 70px;
-          font-size: 13px;
-          padding: 5px;
-        }
       }
+
 
       svg {
         // transition: 1s;
