@@ -4,7 +4,7 @@ const searchInput = document.querySelector( ".search-input" );
 let search = "";
 
 
-function getProductCard({id, images, name, description, price}) {
+function getProductCard( { id, images, name, description, price } ) {
   return `
   <div class="product-card">
     <div class="product-card-body">
@@ -24,9 +24,9 @@ function getProductCard({id, images, name, description, price}) {
 function getProducts() {
   let results = products.filter( pr => pr.name.toLowerCase().includes( search ) );
   productsRow.innerHTML = "";
-  results.map((pr) => {
-    productsRow.innerHTML += getProductCard(pr);
-  });
+  results.map( ( pr ) => {
+    productsRow.innerHTML += getProductCard( pr );
+  } );
 }
 getProducts();
 
@@ -38,9 +38,23 @@ searchInput.addEventListener( 'keyup', function () {
 } );
 
 
-function addToCart(id) {
-  let product = products.find((pr) => pr.id === id);
-  cart.push(product);
+function addToCart( id ) {
+  let product = products.find( ( pr ) => pr.id === id );
+  let check = cart.find( ( pr ) => pr.id === id );
+
+  if ( check ) {
+    cart = cart.map( ( pr ) => {
+      if ( pr.id === id ) {
+        pr.quantity++;
+      }
+      return pr;
+    } );
+  } else {
+    product.quantity = 1;
+    cart.push( product );
+  }
+  localStorage.setItem( "cart", JSON.stringify( cart ) );
+  getProducts();
   getCartTotal();
-  console.log(cart);
 }
+

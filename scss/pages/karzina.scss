@@ -1,2 +1,273 @@
 @use "../global";
 
+.korzina {
+  display: flex;
+  padding-top: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+  padding-bottom: 100px;
+
+  &-name {
+    h1 {
+      color: var(--main-on-surface, #414141);
+      font-family: "Rubik";
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+    }
+  }
+
+  .cart-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+
+    .cart-content {
+      display: flex;
+      width: 896px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+
+      &-name {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+
+        button {
+          border-radius: 4px;
+          border: 1px solid var(--grayscale-lightest, #F3F2F1);
+          background: var(--main-secondary, #70C05B);
+          display: flex;
+          width: 24px;
+          height: 24px;
+          padding: 4px;
+          justify-content: center;
+          align-items: center;
+          flex-shrink: 0;
+        }
+
+        h4 {
+          color: var(--grayscale-hardest, #606060);
+          text-align: center;
+          font-family: "Rubik";
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+        }
+
+        a {
+          color: var(--main-primary, #F63);
+          text-align: center;
+          font-family: "Rubik";
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+        }
+      }
+
+      .card-frame {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+        max-width: 272px;
+
+        .cart-container-cart {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 24px;
+
+          .cart-cart {
+            border-radius: 4px;
+            background: var(--main-surface, #FFF);
+            box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
+            display: flex;
+            width: 896px;
+            align-items: flex-start;
+            gap: 16px;
+            height: 72px;
+
+            &-img {
+              display: flex;
+              align-items: flex-start;
+              gap: 8px;
+              flex: 1 0 0;
+
+              img {
+                width: 80px;
+                height: 60px;
+                border-radius: 4px;
+                background: url(<path-to-image>), lightgray 50% / cover no-repeat, #FFF;
+                box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
+              }
+
+              &-name {
+                h3 {
+                  color: var(--main-on-surface, #414141);
+                  font-family: "Rubik";
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 150%;
+                }
+
+                p {
+                  color: var(--grayscale-hardest, #606060);
+                  font-family: "Rubik";
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 150%;
+                }
+              }
+            }
+
+            &-content {
+              border-radius: 4px;
+              background: var(--main-secondary, #70C05B);
+              display: flex;
+              margin-top: 20px;
+              margin-right: 20px;
+              justify-content: center;
+              align-items: center;
+              gap: 8px;
+
+              .cart-buton {
+                background: var(--main-secondary, #ff0000);
+                padding: 2px;
+                border: none;
+                border-radius: 4px 0px 0px 4px;
+              }
+
+              span {
+                color: var(--main-on-secondary, #FFF);
+                text-align: center;
+                font-family: "Rubik";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+              }
+
+              .cart-button {
+                background: var(--main-secondary, #ff0000);
+                padding: 2px;
+                border: none;
+                border-radius: 0px 4px 4px 0px;
+              }
+            }
+          }
+
+        }
+
+        .sayt-frame {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 24px;
+
+          .togle {
+            display: flex;
+            width: 272px;
+            align-items: center;
+            gap: 10px;
+
+            h1 {
+              color: var(--main-on-surface, #414141);
+              font-family: "Rubik";
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%;
+            }
+          }
+
+          h2 {
+            color: var(--grayscale-hard, #8F8F8F);
+            font-family: "Rubik";
+            font-size: 16px;
+            padding-top: 8px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+          }
+
+          .name-frame {
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+
+            .tawar-sum {
+              padding-top: 10px;
+
+              h1 {
+                color: var(--main-on-surface, #414141);
+                text-align: right;
+                font-family: "Rubik";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+              }
+
+              h3 {
+                padding-top: 8px;
+                color: var(--main-primary, #F63);
+                text-align: right;
+                font-family: "Rubik";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%;
+              }
+            }
+          }
+
+          .itog-name {
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h1 {
+              padding-top: 10px;
+              color: var(--main-on-surface, #414141);
+              text-align: right;
+              font-family: "Rubik";
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 150%;
+            }
+          }
+
+          button {
+            margin: 0 auto;
+            border-radius: 4px;
+            background: var(--main-primary-muted, #FCD5BA);
+            border: none;
+
+            span {
+              color: var(--main-primary, #F63);
+              text-align: center;
+              font-family: "Rubik";
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%;
+              padding: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

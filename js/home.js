@@ -20,9 +20,9 @@ function getProductCard( product ) {
   productCardFooter.className = "product-card-footer";
 
   const productTitle = document.createElement( "h3" );
-  const productTitleText = document.createTextNode( product.name );
+  const productTitleText = document.createTextNode(product.name);
 
-  productTitle.appendChild( productTitleText );
+  productTitle.appendChild(productTitleText);
   productTitle.innerHTML = `<a href="product.html">${product.name}</a>`;
 
   const productPrice = document.createElement( "p" );
@@ -41,8 +41,6 @@ function getProductCard( product ) {
 
   return productCard;
 }
-
-
 
 
 function addToCart( id ) {
@@ -68,28 +66,28 @@ function addToCart( id ) {
 
 function getProducts() {
   let discountProducts = products.filter( ( pr ) => pr.discount ).slice( -4 );
-
-  dicountProductsRow.innerHTML = "";
+  
   discountProducts.map( ( product ) => {
     let card = getProductCard( product );
     dicountProductsRow.append( card );
   } );
-
+  
   let newProducts = products.slice( -4 );
-
-  newProductsRow.innerHTML = "";
+  
   newProducts.map( ( product ) => {
     let card = getProductCard( product );
     newProductsRow.append( card );
   } );
-
+  
   let popularProducts = products
     .toSorted( ( a, b ) => a.rating - b.rating )
     .slice( -4 );
-
-  popularProductsRow.innerHTML = "";
+  
   popularProducts.map( ( product ) => {
     let card = getProductCard( product );
     popularProductsRow.append( card );
   } );
+  
 }
+getProducts()
+
